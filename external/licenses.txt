@@ -1,0 +1,6 @@
+
+jquery licence
+https://github.com/jquery/jquery/blob/master/LICENSE.txt
+
+jquery ui
+https://github.com/jquery/jquery-ui/blob/master/LICENSE.txt
