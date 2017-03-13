@@ -97,3 +97,9 @@ alert(nome);
 }
 }
 
+
+var arr = Object.entries(jogador);
+for (i=0; i<arr.length;i++){
+//console.log(i);
+console.log(typeof arr[i][1]);
+}
