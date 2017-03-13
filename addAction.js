@@ -99,7 +99,16 @@ alert(nome);
 
 
 var arr = Object.entries(jogador);
+listaDeFuncoes=[];
+var j=0;
+
 for (i=0; i<arr.length;i++){
 //console.log(i);
-console.log(typeof arr[i][1]);
+ aux3=typeof arr[i][1];
+
+if (aux3=="function"){
+listaDeFuncoes[i]=arr[i][0];
+j++;
 }
+}
+console.log("funções do jogador: "+listaDeFuncoes);
