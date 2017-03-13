@@ -4,6 +4,11 @@ var funcao="pular";
 var parametro="";
 
 
+objectList=[];
+objectList[0]="jogador";
+objectList[1]="soundSpeaker";
+
+
 function action(obj, func, par){
 this.obj=obj;
 this.func=func;
@@ -14,13 +19,19 @@ this.par=par;
 
 //debug
 //addAction();
-//changeObj();
+changeObj();
 //changeAction();
 //changeParameter();
 
 function changeObj(){
 //todo select from a list
-object="soundSpeaker";
+//selecionado=$(".docObjeto").value;
+selecionado=$("#docObjeto option:selected")[0].value;
+//selecionado=selecionado.value;
+console.log(selecionado);
+//selecionado= parseInt(selecionado);
+
+object=objectList[selecionado];
 }
 function  changeAction(){
 //todo select from a list
@@ -85,5 +96,4 @@ alert(nome);
 
 }
 }
-
 
