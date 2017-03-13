@@ -107,7 +107,7 @@ for (i=0; i<arr.length;i++){
  aux3=typeof arr[i][1];
 
 if (aux3=="function"){
-listaDeFuncoes[i]=arr[i][0];
+listaDeFuncoes[j]=arr[i][0];
 j++;
 }
 }
