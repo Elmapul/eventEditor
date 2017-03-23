@@ -8,7 +8,14 @@ var sprite = new Sprite(img, 32, 32, [
 ]);
 var custom=[20,20];
 sprite.draw([0,0], 20, 20); //pos, x,y
+//map
+var map=[
+[[0,0],[1,1],[0,2],[0,2],[0,2],[0,2],[0,2],[0,2]],
+[[1,0],[1,1],[1,2]],
+[[1,0],[1,1],[1,2]]
 
+];
+//map
 function TileMap(){
 
 }
@@ -16,11 +23,19 @@ function TileMap(){
 TileMap.prototype = {
   draw: function(){
 
-for(x=0;x<10;x++){
+
+//x and y are inverted
+for(x=0;x<3;x++){
 for(y=0;y<10;y++){
-	sprite.draw([0,0], x*32, y*32);
+ax1=map[x][y][0];
+ax2=map[x][y][1];
+console.log(ax1);
+//console.log(ax2);
+	sprite.draw([ax1*32,ax2*32], x*32, y*32);
+
 }}
 
 }};
 var tileMap = new TileMap();
 tileMap.draw();
+

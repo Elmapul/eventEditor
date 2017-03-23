@@ -46,7 +46,7 @@ Bar.prototype = {
 
 var bar = new Bar('life', 10,10,100);
 //bar.setCurrent(10);
-console.log(bar.name);
-console.log(bar.current);
+//console.log(bar.name);
+//console.log(bar.current);
 bar.setCurrent(90);
 bar.draw();

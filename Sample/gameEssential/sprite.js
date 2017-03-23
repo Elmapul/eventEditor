@@ -24,8 +24,8 @@ aux2=pos[1];
 if (typeof position==="object"){}
 aux1=position[0];
 aux2=position[1];
-console.log(aux1);
-console.log(aux2);
+//console.log(aux1);
+//console.log(aux2);
 }
 
 
