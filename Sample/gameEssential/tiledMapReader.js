@@ -6,5 +6,6 @@ var sprite = new Sprite(img, 32, 32, [
     [64, 32], 
     [32, 32]  
 ]);
-sprite.draw(1, 20, 20); //pos, x,y
+var custom=[20,20];
+sprite.draw([0,0], 20, 20); //pos, x,y
 

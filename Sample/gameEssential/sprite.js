@@ -13,16 +13,33 @@ function Sprite(img, width, height, positions){
 
 Sprite.prototype = {
   draw: function(position, x, y){
-      var pos = this.positions[position];
+
+	var aux1,aux2;
+
+if (typeof position==="number"){
+var pos = this.positions[position];
+aux1=pos[0];
+aux2=pos[1];
+}else{
+if (typeof position==="object"){}
+aux1=position[0];
+aux2=position[1];
+console.log(aux1);
+console.log(aux2);
+}
+
+
       ctx.drawImage(
         this.img,
-        pos[0],
-        pos[1],
+	aux1,
+	aux2,
         this.width,
         this.height,
         x, y,
         this.width,
         this.height
       );
+
+
     }
 };
